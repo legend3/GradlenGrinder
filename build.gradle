@@ -11,9 +11,14 @@ sourceCompatibility = 1.8
  * 指定仓库的路径
  * mavenCentral()表示使用中央仓库
 */
-repositories {
-    mavenCentral()
-}
+//repositories {
+//    mavenLocal()
+//    maven {
+//        allowInsecureProtocol = true
+//        url 'https://maven.aliyun.com/repository/public/'
+//    }
+//    mavenCentral()
+//}
 /**所有的依赖包
  * 每个jar包的坐标也都是gav基本元素组成
  * group name version
@@ -21,11 +26,9 @@ repositories {
  * 我们在gradle里面添加坐标的时候都要带上jar包的作用域
  */
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:3.0.8'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    // https://mvnrepository.com/artifact/org.ngrinder/ngrinder-runtime
     implementation group: 'org.ngrinder', name: 'ngrinder-runtime', version: '3.5.5-p1'
+    implementation group: 'org.ngrinder', name: 'ngrinder-groovy', version: '3.5.5-p1'
+    implementation group: 'org.ngrinder', name: 'ngrinder-core', version: '3.5.5-p1'
 
 }
 
