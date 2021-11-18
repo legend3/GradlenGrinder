@@ -1,0 +1,32 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'org.legend'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+/**
+ * 指定仓库的路径
+ * mavenCentral()表示使用中央仓库
+*/
+repositories {
+    mavenCentral()
+}
+/**所有的依赖包
+ * 每个jar包的坐标也都是gav基本元素组成
+ * group name version
+ * testCompile 表示该jar包在测试的时候起作用，该属性为jar包的作用域
+ * 我们在gradle里面添加坐标的时候都要带上jar包的作用域
+ */
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.8'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
