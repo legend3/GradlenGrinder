@@ -1,5 +1,4 @@
 plugins {
-    id 'groovy'
     id 'java'
 }
 
@@ -25,6 +24,9 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.8'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // https://mvnrepository.com/artifact/org.ngrinder/ngrinder-runtime
+    implementation group: 'org.ngrinder', name: 'ngrinder-runtime', version: '3.5.5-p1'
+
 }
 
 test {
