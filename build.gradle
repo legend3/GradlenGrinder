@@ -26,9 +26,9 @@ sourceCompatibility = 1.8
  * 我们在gradle里面添加坐标的时候都要带上jar包的作用域
  */
 dependencies {
-    implementation group: 'org.ngrinder', name: 'ngrinder-runtime', version: '3.5.5-p1'
-    implementation group: 'org.ngrinder', name: 'ngrinder-groovy', version: '3.5.5-p1'
-    implementation group: 'org.ngrinder', name: 'ngrinder-core', version: '3.5.5-p1'
+    implementation group: 'org.ngrinder', name: 'ngrinder-runtime', version: '3.5.2'
+    implementation group: 'org.ngrinder', name: 'ngrinder-groovy', version: '3.5.2'
+    implementation group: 'org.ngrinder', name: 'ngrinder-core', version: '3.5.2'
 
 }
 
